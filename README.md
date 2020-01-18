@@ -1,2 +1,3 @@
-# personal-site
-code export from Glitch for my personal website
+Rocky Martin's Personal Website
+
+Please remix this on Glitch!
