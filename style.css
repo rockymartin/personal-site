@@ -1,0 +1,288 @@
+:root {
+  --blue: #2b5998;
+  --dark-blue: #08111C; /* filter: invert(4%) sepia(4%) saturate(3175%) hue-rotate(240deg) brightness(93%) contrast(99%); */
+  --white: #FEF7F6;
+  --pink: #EF3E36;
+  --light-pink: #F5AFA4;
+  --lightest-pink: #FADAD5;
+  --coral: #E94F37;
+  --orange: #F06543;
+  --teal: #44BBA4; /* filter: invert(65%) sepia(31%) saturate(737%) hue-rotate(118deg) brightness(94%) contrast(83%); */
+  --light-teal: #BBE6DD;
+  --gray: #a0b0b9;
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.coral {
+  color: var(--coral);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.teal {
+  color: var(--teal);
+}
+
+body {
+  font-family: "Barlow", "Benton Sans", "Helvetica Neue", helvetica, arial,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: var(--dark-blue);
+  min-height : 100%
+}
+
+html {
+  height: 100%;
+}
+
+.bottom {
+  margin-bottom: 94px;
+}
+
+a:not(.nav) {
+  /*   font-style: italic; */
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
+
+a.close-button img {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: 20px;
+  left: -15px;
+  border: none;
+  border-radius: 50%;
+}
+
+.center {
+  text-align: center;
+}
+
+#contact {
+  margin-block-start: 0px;
+}
+
+#contact ul {
+  padding-inline-start: 0;
+  padding-left: 15px;
+  list-style-type: none;
+  text-align: left;
+  margin-top: 0;
+}
+
+#contact ul {
+  font-size: 22px;
+}
+
+/* #contact a {
+  color: var(--blue);
+  font-style: italic;
+} */
+
+em {
+  font-weight: bold;
+  font-style: italic;
+}
+
+figure {
+  width: 100%;
+  padding: 0;
+  margin: 15px;
+}
+
+figure img {
+  width: 100%;
+  padding: 0;
+  border: solid;
+  border-color: var(--gray);
+  border-radius: 5px;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  clear: both;
+  background-color: var(--teal);
+  color: var(--dark-blue);
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: solid 5px var(--dark-blue);
+  /*   font-weight: bold; */
+}
+
+footer p a,
+footer p a:visited {
+  font-style: italic;
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
+
+.glitch-embed-wrap {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h1 {
+  margin-block-start: 20px;
+  margin-block-end: 0;
+  font-size: 40px;
+}
+
+h1.name {
+  padding: 15px 0 0 15px;
+  margin-block-start: 20px;
+  margin-block-end: 0;
+  font-size: 60px;
+}
+
+h1 span.highlight {
+  padding: 8px;
+  padding-right: 12px;
+  background-color: var(--lightest-pink);
+}
+
+h2 {
+  padding: 15px 0 0 15px;
+}
+
+hgroup.project-heading h2 {
+  padding: 15px 0 0 15px;
+  margin-block-start: 20px;
+  margin-block-end: 0;
+}
+
+hgroup.project-heading h3 {
+  padding: 5px 0 0 15px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img.icon {
+  filter: invert(4%) sepia(4%) saturate(3175%) hue-rotate(240deg)
+    brightness(93%) contrast(99%);
+  width: 20px;
+}
+
+img.avatar {
+  border-radius: 50%;
+  border: solid 3px var(--dark-blue);
+  display: block;
+  float: left;
+  shape-outside: circle();
+  margin-left: 15px;
+  margin-right: 30px;
+  width: 119px;
+}
+
+main {
+  clear: both;
+}
+
+nav img.icon {
+  filter: invert(87%) sepia(1%) saturate(1154%) hue-rotate(317deg)
+    brightness(112%) contrast(99%);
+}
+
+nav ul {
+  background-color: var(--dark-blue);
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: solid 5px var(--teal);
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  background-color: var(--teal);
+  color: var(--dark-blue);
+}
+
+nav li a:hover img {
+  filter: invert(4%) sepia(4%) saturate(3175%) hue-rotate(240deg)
+    brightness(93%) contrast(99%);
+}
+
+p {
+  padding: 5px 15px 15px 15px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 20px;
+}
+
+p.tagline {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+p.in-progress {
+  padding-bottom: 0;
+  font-style: italic;
+}
+
+p.about {
+  font-size: 21px;
+}
+
+p.date {
+  font-size: 1em;
+}
+
+p.contact {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+span.highlight {
+  background-color: var(--lightest-pink);
+}
+
+section.project {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
