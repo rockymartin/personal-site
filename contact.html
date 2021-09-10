@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact | Rocky Martin</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-144592240-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-144592240-1");
+    </script>
+
+    <title>Rocky Martin | Contact</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Rocky Martin Data Analyst" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="shortcut icon"
@@ -20,6 +36,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- defer - script will wait until page is loaded -->
     <script src="/script.js" defer></script>
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
   </head>
 
   <body>
