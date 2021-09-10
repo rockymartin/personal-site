@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Projects | Rocky Martin</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-144592240-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-144592240-1");
+    </script>
+
+    <title>Rocky Martin | Projects</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rocky Martin Data Analyst" />
+
     <link
       rel="shortcut icon"
       href="https://cdn.glitch.com/9e913b09-6392-4f14-a7c8-6100d37930fc%2Ffavicon.ico?v=1572496226816"
@@ -20,6 +37,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- defer - script will wait until page is loaded -->
     <script src="/script.js" defer></script>
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
   </head>
 
   <body>
@@ -58,22 +82,41 @@
     </header>
 
     <main>
-            <section class="project">
+      <section class="project">
         <hgroup class="project-heading">
           <h2>
             EveryRocky Twitter Bot
           </h2>
         </hgroup>
         <p class="date">
-          Dec 2019 - TBD 
+          Dec 2019 - TBD
         </p>
 
         <p class="desc">
-         Taking inspiration from the <a href="https://twitter.com/everyword">@everyword</a> account, I made my own scheduled Twitter bot <a href="https://twitter.com/Every_Rocky"> (@Every_Rocky)</a> that will tweet
-          the 10,000 most common English words, plus "Rocky". <br/>
-          I set up a crontab on my Raspberry Pi to run this from, and my fork of the original @everyword account can be found here <a href="https://github.com/rockymartin/everywordbot">https://github.com/rockymartin/everywordbot </a>
+          Taking inspiration from the
+          <a href="https://twitter.com/everyword">@everyword</a> account, I made
+          my own scheduled Twitter bot
+          <a href="https://twitter.com/Every_Rocky"> (@Every_Rocky)</a> that
+          will tweet the 10,000 most common English words, plus "Rocky". <br />
+          I set up a crontab on my Raspberry Pi to run this from, and my fork of
+          the original @everyword account can be found here
+          <a href="https://github.com/rockymartin/everywordbot"
+            >https://github.com/rockymartin/everywordbot
+          </a>
         </p>
-<a class="twitter-timeline" data-width="700" data-height="600" data-dnt="true" href="https://twitter.com/Every_Rocky?ref_src=twsrc%5Etfw">Tweets by Every_Rocky</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a
+          class="twitter-timeline"
+          data-width="700"
+          data-height="600"
+          data-dnt="true"
+          href="https://twitter.com/Every_Rocky?ref_src=twsrc%5Etfw"
+          >Tweets by Every_Rocky</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </section>
       <section class="project">
         <hgroup class="project-heading">
@@ -86,8 +129,8 @@
         </p>
 
         <p class="desc">
-          I made this website and a bunch of other small single-purpose
-          websites on <a href="http://glitch.com"> Glitch! </a> <br />
+          I made this website and a bunch of other small single-purpose websites
+          on <a href="http://glitch.com"> Glitch! </a> <br />
           You should remix this and make your own 👍🏻
         </p>
 
@@ -105,8 +148,6 @@
           </iframe>
         </div>
       </section>
-
-      
     </main>
 
     <!-- include the Glitch button to show what the webpage is about and
